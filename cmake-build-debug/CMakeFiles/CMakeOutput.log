@@ -1,12 +1,12 @@
 The system is: Windows - 10.0.18356 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x86/cl.exe 
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27026.1 for x86
+Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27026.1 for x64
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 CMakeCCompilerId.c
@@ -26,25 +26,25 @@ The C compiler identification is MSVC, found in "C:/Users/uzair/Documents/Year 1
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_09672\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_09672.dir\build.make /nologo -L                  CMakeFiles\cmTC_09672.dir\build
-Building C object CMakeFiles/cmTC_09672.dir/testCCompiler.c.obj
-	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @C:\Users\uzair\AppData\Local\Temp\nm65A2.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_a877a\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_a877a.dir\build.make /nologo -L                  CMakeFiles\cmTC_a877a.dir\build
+Building C object CMakeFiles/cmTC_a877a.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\cl.exe @C:\Users\uzair\AppData\Local\Temp\nm99AA.tmp
 testCCompiler.c
-Linking C executable cmTC_09672.exe
-	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_09672.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_09672.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nm67B6.tmp
+Linking C executable cmTC_a877a.exe
+	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a877a.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_a877a.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nm9A86.tmp
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_edebd\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_edebd.dir\build.make /nologo -L                  CMakeFiles\cmTC_edebd.dir\build
-Building C object CMakeFiles/cmTC_edebd.dir/CMakeCCompilerABI.c.obj
-	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @C:\Users\uzair\AppData\Local\Temp\nm6F95.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_b099c\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_b099c.dir\build.make /nologo -L                  CMakeFiles\cmTC_b099c.dir\build
+Building C object CMakeFiles/cmTC_b099c.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\cl.exe @C:\Users\uzair\AppData\Local\Temp\nm9E8C.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_edebd.exe
-	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_edebd.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_edebd.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nm7080.tmp
+Linking C executable cmTC_b099c.exe
+	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_b099c.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_b099c.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nm9F58.tmp
 
 
 
@@ -52,13 +52,13 @@ Linking C executable cmTC_edebd.exe
 Detecting C [] compiler features compiled with the following output:
 Change Dir: C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_69823\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_69823.dir\build.make /nologo -L                  CMakeFiles\cmTC_69823.dir\build
-Building C object CMakeFiles/cmTC_69823.dir/feature_tests.c.obj
-	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @C:\Users\uzair\AppData\Local\Temp\nm75EE.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_e5598\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64\nmake.exe" -f CMakeFiles\cmTC_e5598.dir\build.make /nologo -L                  CMakeFiles\cmTC_e5598.dir\build
+Building C object CMakeFiles/cmTC_e5598.dir/feature_tests.c.obj
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\cl.exe @C:\Users\uzair\AppData\Local\Temp\nmA3BC.tmp
 feature_tests.c
-Linking C executable cmTC_69823.exe
-	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_69823.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_69823.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nm76CA.tmp
+Linking C executable cmTC_e5598.exe
+	"C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e5598.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_e5598.dir\objects1.rsp @C:\Users\uzair\AppData\Local\Temp\nmA479.tmp
 
 
     Feature record: C_FEATURE:1c_function_prototypes
