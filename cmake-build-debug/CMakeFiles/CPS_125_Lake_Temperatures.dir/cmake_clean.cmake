@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CPS_125_Lake_Temperatures.pdb"
   "CPS_125_Lake_Temperatures.exe"
   "CPS_125_Lake_Temperatures.exe.manifest"
-  "libCPS_125_Lake_Temperatures.dll.a"
+  "CPS_125_Lake_Temperatures.lib"
 )
 
 # Per-language clean rules from dependency scanning.
