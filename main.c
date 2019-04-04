@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void GetData() {
-    FILE *file;
+void GetData(FILE *file) {
     file = fopen("LakeTemp2017.dat", "r");
     for (int i = 0; i < 365; i++){
         for (int j = 0; j < 8; j++){
@@ -14,10 +13,26 @@ void GetData() {
         }
         printf("\n");
     }
-    fclose(file);
+
 }
 
 int main() {
-    GetData();
+    /* Initialize 2D Array */
+    double data[365][8];
+
+    /* Initialize Read-Only File */
+    FILE *file;
+    file = fopen("LakeTemp2017.dat", "r");
+
+    /* Fill array with values*/
+    for (int i = 0; i<365; i++){
+        for (int j = 0; j < 8; ++j) {
+            double n;
+            fscanf(file, "%lf", &n);
+            data[i][j] = n;
+            printf("%lf ", data[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
