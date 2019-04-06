@@ -66,19 +66,19 @@ void perDayHotnCold(char *nameData[6], double data[365][8], double coldestDays[6
 
     printf("Lake\t\tWarmest\t  Date\t\tColdest\t  Date\n");
 
-    for(int i = 0; i < 6; i++){
+    for(int i = 2; i < 8; i++){
         int MM=0, MM2=0, DD=0, DD2=0;
         for(int j = 0; j<365; j++){
-            if(data[coldest][i+2] > data[j][i+2]) coldest = j;
-            else if(data[hottest][i+2] < data[j][i+2]) hottest = j;
+            if(data[coldest][i] > data[j][i]) coldest = j;
+            else if(data[hottest][i] < data[j][i]) hottest = j;
         }
-        coldestDays[i]=coldest;
-        hottestDays[i]=hottest;
+        coldestDays[i-2]=coldest;
+        hottestDays[i-2]=hottest;
 
-        convertToDDMM(hottest, &MM, &DD);
-        convertToDDMM(coldest, &MM2, &DD2);
+        convertToDDMM((int)data[hottest][1], &MM, &DD);
+        convertToDDMM((int)data[coldest][1], &MM2, &DD2);
 
-        printf("Lake %s:\t%5.2lf  \t%s %d\t\t%5.2lf  \t%s %d\n", nameData[i], data[hottest][i+2], monthName[MM], DD, data[coldest][i+2], monthName[MM2], DD2);
+        printf("Lake %s:\t%5.2lf  \t%s %d\t\t%5.2lf  \t%s %d\n", nameData[i-2], data[hottest][i], monthName[MM-1], DD, data[coldest][i], monthName[MM2-1], DD2);
     }
 }
 
