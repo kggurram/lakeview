@@ -16,3 +16,61 @@ void GetData(FILE *file) {
 }
 
 
+void hot (char *nameData[6], double data[365][8],char *monthName[12]){
+    printf("\nQuestion 4\n");
+    int g = 0 ;
+    int h =0;
+    for(int l = 0; l < 365 ; ++l){
+        for( int k = 0 ; k < 6 ; ++k){
+            if(data[g][h+2] < data[l][k+2]) {
+                g = l;
+                h = k;
+            }
+        }
+    }
+    printf("Hottest = %lf  ",data[g][h+2]);
+    printf("%s  ",nameData[h]);
+
+    int mday[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    int d = 0;
+    for(int f = 0; f < 12; f++){
+        if ( g > d)
+            d += mday[f];
+        else {
+            int t = d - mday[f];
+            printf("on %s  ", monthName[f-1]);
+            printf("%d\n",g - t);
+            break;
+        }
+    }
+}
+
+void cold (char *nameData[6], double data[365][8],char *monthName[12]){
+     int g = 0 ;
+     int h =0;
+     for(int l = 0; l < 365 ; ++l){
+         for( int k = 0 ; k < 6 ; ++k){
+             if(data[g][h+2] > data[l][k+2]) {
+                 g = l;
+                 h = k;
+
+             }
+         }
+     }
+     printf("Coldest =  ");
+     printf("%lf  ",data[g][h+2]);
+     printf("%s  ",nameData[h]);
+
+     int mday[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+     int d = 0;
+     for(int f = 0; f < 12; f++){
+         if ( g > d)
+             d += mday[f];
+         else {
+             int t = d - mday[f];
+             printf("on %s  ", monthName[f-1]);
+             printf("%d\n\n",g - t);
+             break;
+         }
+     }
+ }
