@@ -12,6 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fb9d73-c784-4653-a1aa-97ddabaf7e7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunkCodeUnneeded" beforeDir="false" afterPath="$PROJECT_DIR$/JunkCodeUnneeded" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/main.c.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -23,15 +26,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="196" column="26" lean-forward="true" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+            <state relative-caret-position="488">
+              <caret line="174" column="73" lean-forward="true" selection-start-line="174" selection-start-column="73" selection-end-line="174" selection-end-column="73" />
               <folding>
-                <element signature="e#2535#3350#0" />
-                <element signature="e#4100#4814#0" />
+                <element signature="e#20#669#0" />
+                <element signature="e#533#1066#0" />
+                <element signature="e#1227#2598#0" />
+                <element signature="e#2472#3705#0" />
+                <element signature="e#3518#4470#1" />
+                <element signature="e#4491#5229#1" />
+                <element signature="e#5198#6488#0" />
               </folding>
             </state>
           </provider>
@@ -40,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="180" column="3" lean-forward="true" selection-start-line="180" selection-start-column="3" selection-end-line="183" selection-end-column="32" />
+            <state relative-caret-position="4140">
+              <caret line="180" column="3" selection-start-line="180" selection-start-column="3" selection-end-line="183" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -49,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JunkCodeUnneeded">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="-41">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -67,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/LakeTemp2017.dat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6118">
+            <state relative-caret-position="909">
               <caret line="266" column="14" selection-start-line="266" selection-end-line="267" />
             </state>
           </provider>
@@ -84,8 +92,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ReadWriteData.c" />
         <option value="$PROJECT_DIR$/data.dat" />
-        <option value="$PROJECT_DIR$/JunkCodeUnneeded" />
         <option value="$PROJECT_DIR$/cmake-build-debug/LakeTemp2017.dat" />
+        <option value="$PROJECT_DIR$/JunkCodeUnneeded" />
         <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
@@ -169,21 +177,20 @@
       <workItem from="1554496507002" duration="1722000" />
       <workItem from="1554507977822" duration="15278000" />
       <workItem from="1554583294774" duration="2045000" />
-      <workItem from="1554645307201" duration="1353000" />
+      <workItem from="1554645307201" duration="11130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49724000" />
+    <option name="totallyTimeSpent" value="59501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.122068234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49946696" visible="true" weight="0.22381477" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49946696" visible="true" weight="0.14112459" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -199,7 +206,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" x="730" y="301" width="1876" height="201" id="Run" order="4" sideWeight="0.49946696" visible="true" weight="0.47867805" />
+      <window_info anchor="right" x="730" y="301" width="1876" height="201" id="Run" order="4" sideWeight="0.49946696" weight="0.47867805" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,10 +223,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.dat" />
-    <entry file="file://$PROJECT_DIR$/JunkCodeUnneeded">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/LakeTemp2017.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="909">
+          <caret line="266" column="14" selection-start-line="266" selection-end-line="267" />
         </state>
       </provider>
     </entry>
@@ -230,27 +237,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/LakeTemp2017.dat">
+    <entry file="file://$PROJECT_DIR$/code.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6118">
-          <caret line="266" column="14" selection-start-line="266" selection-end-line="267" />
+        <state relative-caret-position="4140">
+          <caret line="180" column="3" selection-start-line="180" selection-start-column="3" selection-end-line="183" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code.txt">
+    <entry file="file://$PROJECT_DIR$/JunkCodeUnneeded">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="180" column="3" lean-forward="true" selection-start-line="180" selection-start-column="3" selection-end-line="183" selection-end-column="32" />
+        <state relative-caret-position="-41">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="196" column="26" lean-forward="true" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+        <state relative-caret-position="488">
+          <caret line="174" column="73" lean-forward="true" selection-start-line="174" selection-start-column="73" selection-end-line="174" selection-end-column="73" />
           <folding>
-            <element signature="e#2535#3350#0" />
-            <element signature="e#4100#4814#0" />
+            <element signature="e#20#669#0" />
+            <element signature="e#533#1066#0" />
+            <element signature="e#1227#2598#0" />
+            <element signature="e#2472#3705#0" />
+            <element signature="e#3518#4470#1" />
+            <element signature="e#4491#5229#1" />
+            <element signature="e#5198#6488#0" />
           </folding>
         </state>
       </provider>
