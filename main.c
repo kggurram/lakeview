@@ -147,9 +147,29 @@ void winterAvgs (const double data[365][8], const char *nameData[6]){
     printf("\t\t\t--------\n");
 }
 /* Part 7 - Karthik*/
-
+void swimDays(const double data[365][8], const char *nameData[6]){
+    printf("\nQuestion 7\n");
+    printf("Number of Swim Days per Lake\n");
+    int lakeDays[6]={0};
+    for (int i = 2; i<8; i++){
+        for (int j = 0; j < 365; ++j){
+            if(data[j][i]>20) lakeDays[i-2]++;
+        }
+        printf("Lake %s:\t%3d\n",nameData[i-2],lakeDays[i-2]);
+    }
+}
 /* Part 8 - Karthik*/
-
+void frozenDays(const double data[365][8], const char *nameData[6]){
+    printf("\nQuestion 8\n");
+    printf("Number of Frozen Days per Lake\n");
+    int lakeDays[6]={0};
+    for (int i = 2; i<8; i++){
+        for (int j = 0; j < 365; ++j){
+            if(data[j][i]<0) lakeDays[i-2]++;
+        }
+        printf("Lake %s:\t%3d\n",nameData[i-2],lakeDays[i-2]);
+    }
+}
 /*Main Function - Uzair*/
 int main() {
     /* Initialize Array for name of Strings and Months, average temperatures, and coldest and hottest days. 2D array for all data,*/
@@ -175,5 +195,7 @@ int main() {
     overallHotnCold(data, nameData, monthName, hottestDays, coldestDays);
     summerAvgs(data,nameData);
     winterAvgs(data,nameData);
+    swimDays(data, nameData);
+    frozenDays(data, nameData);
     return 0;
 }
