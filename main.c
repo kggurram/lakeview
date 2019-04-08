@@ -10,7 +10,7 @@ void convertToDDMM(int day, int *MM, int *DD){
     *DD = (mday[i-1])-(sum-day);
 }
 /* Part 1 - Uzair*/
-void averages(const double data[365][8], const char *nameData[6], double averageData[6]){
+void averages(const double data[365][8], char *nameData[6], double averageData[6]){
     printf("\nQuestion 1\n");
     /*sum all the temperatures for each lake on each day*/
     for (int i = 0; i <365; i++){
@@ -25,7 +25,7 @@ void averages(const double data[365][8], const char *nameData[6], double average
     printf("\t\t\t--------\n");
 }
 /* Part 2 - Uzair*/
-void avgAnalysis(const double averageData[6], const char *nameData[6]){
+void avgAnalysis(const double averageData[6], char *nameData[6]){
     printf("\nQuestion 2\n");
     /*initialize variables*/
     double avgavg = 0;
@@ -51,7 +51,7 @@ void avgAnalysis(const double averageData[6], const char *nameData[6]){
     printf("\t\t\t--------\n");
 }
 /* Part 3 - Uzair*/
-void perLakeHotnCold(const double data[365][8], const char *nameData[6], const char *monthName[12], int hottestDays[6], int coldestDays[6]){
+void perLakeHotnCold(const double data[365][8], char *nameData[6], char *monthName[12], int hottestDays[6], int coldestDays[6]){
     int coldest = 0, hottest = 0;
     printf("\nQuestion 3\n");
     printf("Warmest and Coldest Temperatures, Per lake and Overall\n");
@@ -75,7 +75,7 @@ void perLakeHotnCold(const double data[365][8], const char *nameData[6], const c
     printf("\t\t\t--------\n");
 }
 /* Part 4 - Param*/
-void overallHotnCold (const double data[365][8], const char *nameData[6], const char *monthName[12], const int hottestDays[6], const int coldestDays[6]){
+void overallHotnCold (const double data[365][8], char *nameData[6], char *monthName[12], int hottestDays[6], int coldestDays[6]){
     printf("\nQuestion 4\n");
     int hottest = 0, coldest = 0, MM=0,MM2=0,DD=0,DD2=0;
     for (int i = 0; i < 6; i++){
@@ -116,7 +116,7 @@ void summerAvgs (const double data[365][8], char *nameData[6]){
     printf("\t\t\t--------\n");
 }
 /* Part 6 - Param*/
-void winterAvgs (const double data[365][8], const char *nameData[6]){
+void winterAvgs (const double data[365][8], char *nameData[6]){
     printf("\nQuestion 6\n");
     printf("Summer Averages (Warmest to Coldest)\n");
     double avgOrdered [6];
@@ -147,8 +147,31 @@ void winterAvgs (const double data[365][8], const char *nameData[6]){
     printf("\t\t\t--------\n");
 }
 /* Part 7 - Karthik*/
-/* Part 7 - Karthik*/
-
+void comfyWaters (const double data[365][8], char *nameData[6]){
+    printf("\nQuestion 7\n");
+    printf("Days Above 20 Degrees Celsius\n");
+    int niceDays[6]= {0};
+    for(int i = 2; i < 8; i ++){
+        for(int j = 0; j < 365; j++){
+            if(data[j][i] > 20) niceDays[i-2]++;
+        }
+        printf("Lake %s:\t%5d Warm Days:\n", nameData[i-2], niceDays[i-2]);
+    }
+    printf("\t\t\t--------\n");
+}
+/* Part 8 - Karthik*/
+void yourMixtape (const double data[365][8], char *nameData[6]){
+    printf("\nQuestion 8\n");
+    printf("Days Below 0 Degrees Celsius\n");
+    int freezeDays[6]= {0};
+    for(int i = 2; i < 8; i ++){
+        for(int j = 0; j < 365; j ++){
+            if(data[j][i] < 0) freezeDays[i-2]++;
+        }
+        printf("Lake %s:\t%5.2d Freezing Days:\n",nameData[i-2], freezeDays[i-2]);
+    }
+    printf("\t\t\t--------\n");
+}
 
 /*Main Function - Uzair*/
 int main() {
@@ -173,5 +196,7 @@ int main() {
     overallHotnCold(data, nameData, monthName, hottestDays, coldestDays);
     summerAvgs(data,nameData);
     winterAvgs(data,nameData);
+    comfyWaters(data, nameData);
+    yourMixtape(data, nameData);
     return 0;
 }

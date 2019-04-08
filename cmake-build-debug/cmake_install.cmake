@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures
+# Install script for directory: D:/Programming Projects/CPS 125 Lake Temperatures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Programming Projects/CPS 125 Lake Temperatures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

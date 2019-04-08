@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/main.c" "C:/Users/uzair/Documents/Year 1/CPS125/Final Project/CPS-125-Lake-Temperatures/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/main.c.obj"
+  "D:/Programming Projects/CPS 125 Lake Temperatures/main.c" "D:/Programming Projects/CPS 125 Lake Temperatures/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/main.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
