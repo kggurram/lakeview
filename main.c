@@ -2,22 +2,13 @@
 
 /*Helper - Uzair - Convert 365 Day format to DDMM*/
 void convertToDDMM(int day, int *MM, int *DD){
-    int mday[] = {31,28,31,30,31,30,31,31,30,31,30,31};
-    int months = 12;
-    int sum = 0;
-    for(int i = 1; i <= months; i++){
-        if (day >= sum && day <= sum+mday[i] && i<months){
-            *MM = i;
-            *DD = day-sum;
-            break;
-        }
-        else if (i ==months){
-            *MM = months;
-            *DD = day-sum;
-            break;
-        }
-        sum += mday[i-1];
+    int mday[] = {31,28,31,30,31,30,31,31,30,31,30,31}, sum = 0, i = 0;
+    while (day > sum) {
+        sum += mday[i];
+        i++;
     }
+    *MM = i;
+    *DD = (mday[i-1])-(sum-day);
 }
 /* Part 1 - Uzair*/
 void averages(const double data[365][8], const char *nameData[6], double averageData[6]){

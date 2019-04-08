@@ -12,6 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fb9d73-c784-4653-a1aa-97ddabaf7e7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_125_Lake_Temperatures.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPS_125_Lake_Temperatures.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -63,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="708">
+              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
             </state>
           </provider>
         </entry>
@@ -180,11 +186,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60668000" />
+    <option name="totallyTimeSpent" value="61924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.122068234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -205,7 +210,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" x="730" y="301" width="1876" height="201" id="Run" order="4" sideWeight="0.49946696" visible="true" weight="0.4173774" />
+      <window_info anchor="right" x="730" y="301" width="1876" height="201" id="Run" order="4" sideWeight="0.49946696" weight="0.4173774" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12313433" />
@@ -274,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="708">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
         </state>
       </provider>
     </entry>
