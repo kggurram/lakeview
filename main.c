@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*Helper - Uzair - Convert 365 Day format to DDMM*/
 void convertToDDMM(int day, int *MM, int *DD){
     int mday[] = {31,28,31,30,31,30,31,31,30,31,30,31}, sum = 0, i = 0;
@@ -90,25 +89,30 @@ void overallHotnCold (const double data[365][8], const char *nameData[6], const 
     printf("\t\t\t--------\n");
 }
 /* Part 5 - Param*/
-void summerAvgs (const double data[365][8], const char *nameData[6]){
+void summerAvgs (const double data[365][8], char *nameData[6]){
     printf("\nQuestion 5\n");
     printf("Summer Averages (Warmest to Coldest)\n");
     double avgOrdered[6];
+    char *nNameData[6];
     for(int i = 0; i < 6; i++){
         double avg = 0;
         for(int j = 171 ; j < 265; j++) avg += data[j][i+2];
         avgOrdered[i]= (avg/93);
+        nNameData[i]=nameData[i];
     }
     for (int i = 0; i < 6; i++){
         for (int j = 0; j < 6; j++){
             if (avgOrdered[j] < avgOrdered[i]){
                 double tmp = avgOrdered[i];
+                char *tmp2 = nNameData[i];
                 avgOrdered[i] = avgOrdered[j];
+                nNameData[i] = nNameData[j];
                 avgOrdered[j] = tmp;
+                nNameData[j] = tmp2;
             }
         }
     }
-    for (int i = 0; i < 6; i++) printf("Lake %s:\t%5.2lf Degrees Celsius\n",nameData[i], avgOrdered[i]);
+    for (int i = 0; i < 6; i++) printf("Lake %s:\t%5.2lf Degrees Celsius\n",nNameData[i], avgOrdered[i]);
     printf("\t\t\t--------\n");
 }
 /* Part 6 - Param*/
@@ -116,6 +120,7 @@ void winterAvgs (const double data[365][8], const char *nameData[6]){
     printf("\nQuestion 6\n");
     printf("Summer Averages (Warmest to Coldest)\n");
     double avgOrdered [6];
+    char *nNameData[6];
     double average;
     for( int l = 0 ; l < 6 ; l++) {
         double avg = 0;
@@ -124,54 +129,36 @@ void winterAvgs (const double data[365][8], const char *nameData[6]){
         for (int d = 354; d < 365; d++) avgt += data[d][l+2];
         average = (avgt + avg)/89;
         avgOrdered[l] = average;
+        nNameData[l]=nameData[l];
     }
     for (int i = 0; i < 6; i++){
         for (int j = 0; j < 6; j++){
             if (avgOrdered[j] < avgOrdered[i]){
                 double tmp = avgOrdered[i];
+                char *tmp2 = nNameData[i];
                 avgOrdered[i] = avgOrdered[j];
+                nNameData[i] = nNameData[j];
                 avgOrdered[j] = tmp;
+                nNameData[j] = tmp2;
             }
         }
     }
-    for (int i = 0; i < 6; i++) printf("Lake %s:\t%5.2lf Degrees Celsius\n",nameData[i], avgOrdered[i]);
+    for (int i = 0; i < 6; i++) printf("Lake %s:\t%5.2lf Degrees Celsius\n",nNameData[i], avgOrdered[i]);
     printf("\t\t\t--------\n");
 }
 /* Part 7 - Karthik*/
-void swimDays(const double data[365][8], const char *nameData[6]){
-    printf("\nQuestion 7\n");
-    printf("Number of Swim Days per Lake\n");
-    int lakeDays[6]={0};
-    for (int i = 2; i<8; i++){
-        for (int j = 0; j < 365; ++j){
-            if(data[j][i]>20) lakeDays[i-2]++;
-        }
-        printf("Lake %s:\t%3d\n",nameData[i-2],lakeDays[i-2]);
-    }
-}
-/* Part 8 - Karthik*/
-void frozenDays(const double data[365][8], const char *nameData[6]){
-    printf("\nQuestion 8\n");
-    printf("Number of Frozen Days per Lake\n");
-    int lakeDays[6]={0};
-    for (int i = 2; i<8; i++){
-        for (int j = 0; j < 365; ++j){
-            if(data[j][i]<0) lakeDays[i-2]++;
-        }
-        printf("Lake %s:\t%3d\n",nameData[i-2],lakeDays[i-2]);
-    }
-}
+/* Part 7 - Karthik*/
+
+
 /*Main Function - Uzair*/
 int main() {
-    /* Initialize Array for name of Strings and Months, average temperatures, and coldest and hottest days. 2D array for all data,*/
     char *nameData[6] = {"Superior","Michigan","Huron","Erie","Ontario","St. Clair"}, *monthName[12] = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
     /* Initialize 2D Array for data*/
     double data[365][8],averageData[6] = {0};
     int coldestDays[6] = {0}, hottestDays[6] = {0};
-    /* Initialize Read-Only File */
+    /* Read from File and add to array*/
     FILE *file;
     file = fopen("LakeTemp2017.dat", "r");
-    /* Fill array with values*/
     for (int i = 0; i<365; i++){
         for (int j = 0; j < 8; ++j) {
             double n;
@@ -186,7 +173,5 @@ int main() {
     overallHotnCold(data, nameData, monthName, hottestDays, coldestDays);
     summerAvgs(data,nameData);
     winterAvgs(data,nameData);
-    swimDays(data, nameData);
-    frozenDays(data, nameData);
     return 0;
 }
