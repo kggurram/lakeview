@@ -155,7 +155,7 @@ void comfyWaters (const double data[365][8], char *nameData[6]){
         for(int j = 0; j < 365; j++){
             if(data[j][i] > 20) niceDays[i-2]++;
         }
-        printf("Lake %s:\t%5d Warm Days:\n", nameData[i-2], niceDays[i-2]);
+        printf("Lake %s:\t%5d Warm Days\n", nameData[i-2], niceDays[i-2]);
     }
     printf("\t\t\t--------\n");
 }
@@ -168,11 +168,10 @@ void yourMixtape (const double data[365][8], char *nameData[6]){
         for(int j = 0; j < 365; j ++){
             if(data[j][i] < 0) freezeDays[i-2]++;
         }
-        printf("Lake %s:\t%5.2d Freezing Days:\n",nameData[i-2], freezeDays[i-2]);
+        printf("Lake %s:\t%5d Freezing Days\n",nameData[i-2], freezeDays[i-2]);
     }
     printf("\t\t\t--------\n");
 }
-
 /*Main Function - Uzair*/
 int main() {
     char *nameData[6] = {"Superior","Michigan","Huron","Erie","Ontario","St. Clair"}, *monthName[12] = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
