@@ -4,7 +4,7 @@ Term Project for CPS125 - Digital Computation and Programming.
 
 ## Requirements
 
-Read a large file of temperatures of each of the 5 Great Lakes and organize them _with dates_ accordingly to variuos project solutions.
+Read a large file of temperatures of each of the 5 Great Lakes and organize them _with dates_ accordingly to various project solutions.
 
 ## Project Questions
 
