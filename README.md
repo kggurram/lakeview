@@ -1,4 +1,5 @@
-# Lakeview - a CPS125 Project
+# Lakeview
+> CPS125 (Digital Computation & Programming) Project
 
 Term Project for CPS125 - Digital Computation and Programming, built using C.
 
